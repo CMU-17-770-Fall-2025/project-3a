@@ -11,8 +11,8 @@ references (i.e, reference counting is not valid).
 You will likely benefit from extending your first project, which should already have a fully working interpreter.
 [wasmparser](https://docs.rs/wasmparser/latest/wasmparser/) on Rust already supports GC opcode 
 parsing, which is an option you may consider.
-Regardless, we provide starter code for basic wasm parsing (same as Project 1), 
-  to which you will need to add support for additional types.
+If you are not using Rust, we provide starter code for basic wasm parsing (same as Project 1), 
+  to which you will need to add support for additional types and opcodes.
 
 ## Binary Specification
 
