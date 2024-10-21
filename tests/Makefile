@@ -6,8 +6,8 @@ OUTPUT_EC_DIR = wasm-ec
 
 # Tools
 CLANG = /opt/wasi-sdk/bin/clang
-WAT2WASM = wat2wasm
-WASM2WAT = wasm2wat
+WAT2WASM = wasm-tools parse
+WASM2WAT = wasm-tools print
 
 # File extensions
 C_EXT = .c
