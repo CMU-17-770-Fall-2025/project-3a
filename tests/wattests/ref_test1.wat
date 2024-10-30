@@ -1,5 +1,5 @@
 ;; ref.test1
-;; Null (array) for (ref array), eqref
+;; Null (array) for (ref array), anyref
 (module
   (type $i32_array (array i32))
   (type $custom_struct (struct (field $a i32) (field $b (ref null $i32_array)) (field $c f64)))
@@ -17,7 +17,7 @@
     (local $st (ref $custom_struct))
     (local.set $st (call $struct_init))
     (ref.test (ref array) (struct.get $custom_struct $b (local.get $st)))
-    (ref.test eqref (struct.get $custom_struct $b (local.get $st)))
+    (ref.test anyref (struct.get $custom_struct $b (local.get $st)))
     i32.add
   )
   (export "main" (func $main))

@@ -20,7 +20,7 @@
 
     (i32.shl (ref.test (ref struct) (local.get $st)) (i32.const 0))
     (i32.shl (ref.test structref (local.get $st)) (i32.const 1))
-    (i32.shl (ref.test eqref (local.get $st)) (i32.const 2))
+    (i32.shl (ref.test nullref (local.get $st)) (i32.const 2))
     (i32.shl (ref.test (ref struct) (ref.null $custom_struct)) (i32.const 3))
     (i32.shl (ref.test structref (ref.null $custom_struct)) (i32.const 4))
     (i32.shl (ref.test (ref struct) (struct.new $gen_struct)) (i32.const 5))
