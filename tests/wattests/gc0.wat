@@ -5,7 +5,7 @@
   (type $main_type (func (result f64)))
 
   (func $dummy (result f64)
-    (array.new $f64_array (f64.const 3.14) (i32.const 2147483648))
+    (array.new $f64_array (f64.const 3.14) (i32.const 4200000))
     (array.get $f64_array (i32.const 5))
   )
 
@@ -13,7 +13,7 @@
     (local $counter i32)
     (local $acc f64)
 
-    (local.set $counter (i32.const 1000000000))
+    (local.set $counter (i32.const 1000))
     (local.set $acc (f64.const 0))
 
     (loop

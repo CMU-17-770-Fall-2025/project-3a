@@ -11,7 +11,7 @@
     (local.set $arr (array.new $i32_array (i32.const 1) (local.get 0)))
     (local.set $counter (local.get 0))
     (loop
-      (array.set $i32_array (local.get $arr) (local.get $counter) (i32.sub (local.get 0) (local.get $counter)))
+      (array.set $i32_array (local.get $arr) (i32.sub (local.get $counter) (i32.const 1)) (i32.sub (local.get 0) (local.get $counter)))
       (br_if 0 (local.tee $counter (i32.sub (local.get $counter) (i32.const 1))))
     )
     local.get $arr
@@ -28,7 +28,7 @@
     (loop
       (array.get $i32_array (local.get $arr1) (local.get $counter))
       (array.get $i32_array (local.get $arr2) (i32.add (local.get 1) (local.get $counter)))
-      i32.add
+      i32.mul
       local.get $total
       i32.add
       local.set $total
