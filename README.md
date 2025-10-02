@@ -6,6 +6,8 @@ In this project, you will implement a garbage collector backed by the Wasm
 You are free to implement any form of collector, but you must be able handle cyclic
 references (i.e, reference counting is not valid).
 
+The project description and specifications of Project 3a can be found at the website [here](https://www.cs.cmu.edu/~wasm/cs17-770/fall2025/proj3a.html).
+
 ## Starter Code
 
 You will likely benefit from extending your first project, which should already have a fully working interpreter.
@@ -24,9 +26,7 @@ Your binary must take one option: the `-a` argument from earler to pass paramete
 
 ## Submission and Grading
 
-Submit your code to Canvas (URL to the private repo) and add the TA (Github ID: arjunr2) 
-as a collaborator to the repo. Include any notes about the branch that contains the code
-as a comment in the Canvas submission.
+Submit your code to Gradescope.
 
 For some initial tests for GC extensions, we recommend looking at the Wasm [spec tests](https://github.com/WebAssembly/gc/tree/main/test/core/gc).
 We have provided a copy of these tests [here](tests/wasttests).
